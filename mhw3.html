@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="it">
+
+      <head>
+            <meta charset="utf-8">
+            <title>eBay | Il Marketplace delle passioni</title>
+            <link rel="icon" type="image/x-icon" href="img/icons/favicon.ico">
+            <link rel="stylesheet" href="mhw3.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+            <script src="mhw3.js" defer></script>
+      </head>
+
+      <body class="no-margin">
+
+            <nav id="nav-head" class="margined">
+                  <div id="nav-head-left">
+                        <div id="login-register">
+                              <span>Ciao!&nbsp;<a href="">Accedi</a>&nbsp;</span>
+                              <span id="nav-head-register">o&nbsp;<a href="">registrati</a></span>
+                        </div>
+                        <div id="nav-head-semi-left" class="black-alpha-color">
+                              <a href="">eBay Extra</a>
+                              <a href="">eBay Imperdibili</a>
+                              <a href="">Aiuto e contatti</a>
+                              <a href=""><img src="img/icons/coupon_10.jpg" id="nav-img-promo"></a>
+                        </div>
+                  </div>
+                  <div id="nav-head-right" class="black-alpha-color">
+                        <div id="nav-head-semi-right">
+                              <a href="">Vendi</a>
+                              <a href="">Oggetti che osservi</a>
+                        </div>
+                        <div id="my-account-link">
+                              <a href="">Il mio eBay</a>
+                              <div id="my-account-menu" class="menu-hidden" data-show="hidden">
+                                    <ul>
+                                          <li><a href="">Riepilogo</a></li>
+                                          <li><a href="">Visti di recente</a></li>
+                                          <li><a href="">Offerte/Proposte</a></li>
+                                          <li><a href="">Oggetti che osservi</a></li>
+                                          <li><a href="">Cronologia acquisti</a></li>
+                                          <li><a href="">Vendite</a></li>
+                                          <li><a href="">Ricerche salvate</a></li>
+                                          <li><a href="">Venditori salvati</a></li>
+                                          <li><a href="">Il mio garage</a></li>
+                                          <li><a href="">Messaggi</a></li>
+                                          <li><a href="">eBay Extra</a></li>
+                                    </ul>
+                              </div>
+                        </div>
+                        <a id="nav-head-notify" href=""><img src="img/icons/notifica.png"></a>
+                        <a href=""><img src="img/icons/carrello.png"></a>
+                  </div>
+            </nav>
+
+            <header class="margined">
+                  <nav id="nav-search">
+                        <img id="logo" src="img/site-logos/logo.png">
+                        <button id="category-button" class="mobile-hide-content" type="button">Scegli la categoria</button>
+                        <div id="category-menu" class="menu-hidden">   <!-- class='showed' per mostrare -->
+                              <table id="category-tab-menu">
+                                    <tbody>
+                                          <tr id="categories-tr-tab-menu"></tr>
+                                          <tr>
+                                                <td>
+                                                      <h3><a href="https://www.ebay.it/n/all-categories">Vedi tutte le categorie</a></h3>
+                                                </td>
+                                          </tr>
+                                    </tbody>
+                              </table>
+                        </div>
+                        <div id="nav-search-input-type">
+                              <input id="nav-input-search" type="search" placeholder="Cerca qualsiasi cosa">
+                              <select id="category-select" class="mobile-hide-content"><option value="0">Tutte le categorie</option></select>
+                              <button id="cerca-button"><span class="mobile-hide-content">Cerca</span></button>
+                              <div id="search-container" class="menu-hidden"></div>
+                        </div>
+                        <a class="mobile-hide-content">Avanzata</a>
+                  </nav>
+
+                  <div id="categorie">
+                        <a id="title-selected">Home</a>
+                        <span>
+                              <img id="cuore-salvati" src="img/icons/cuore.png">
+                              <a>Salvati</a>
+                        </span>
+                        <a>Elettronica</a>
+                        <a>Gaming</a>
+                        <a class="mobile-hide-content">Elettrodomestici</a>
+                        <a class="mobile-hide-content">Casa e Giardino</a>
+                        <a class="mobile-hide-content">Fai da te</a>
+                        <a class="mobile-hide-content">Collezionismo</a>
+                        <a class="mobile-hide-content">Moda</a>
+                        <a class="mobile-hide-content">Sport</a>
+                        <a class="mobile-hide-content">Motori</a>
+                        <a class="mobile-hide-content">Ricondizionato</a>
+                        <a class="mobile-hide-content">Aste di beneficenza</a>
+                        <a class="mobile-show-content">Altro</a>
+                  </div>
+
+            </header>
+
+            <main class="margined">
+
+                  <section id="promo-top-section" class="no-padding-top">
+                        <button id="go-back-promo-button"><</button>
+                        <div class="flex-container-promo-top flex-container-promo background-light-green-color green-color show-container-promo" data-promo-number="1" data-show="yes">
+                              <div class="flex-container-promo flex-container-text">
+                                    <div class="flex-item-promo">
+                                          <a><h2 class="promo-title">Respira aria di primavera con il coupon 10%</h2></a>
+                                          <span>Risparmia ora e rendi perfetta la bella stagione!</span>
+                                          <a><div class="flex-item-promo promo-button">Acquista ora</div></a>
+                                          <a class="underlined"><span class="mobile-very-mini-text">Vedi T&C.</span></a>
+                                    </div>
+                              </div>
+                              <div class="flex-item-promo flex-container-img no-padding"></div>
+                        </div>
+                        <div class="flex-container-promo-top flex-container-promo background-yellow-color brown-color" data-promo-number="2" data-show="none">
+                              <div class="flex-container-promo flex-container-text">
+                                    <div class="flex-item-promo">
+                                          <a><h2 class="promo-title">Tutte le tue passioni in un unico posto</h2></a>
+                                          <span>Trova pezzi unici e arricchisci le tue collezioni</span>
+                                          <a><div class="flex-item-promo promo-button">Vedi tutto</div></a>
+                                          <a class="underlined"><span class="mobile-very-mini-text">Vedi T&C.</span></a>
+                                    </div>
+                              </div>
+                              <div class="flex-item-promo flex-container-img no-padding"></div>
+                        </div>
+                        <div class="flex-container-promo-top flex-container-promo background-grey-color light-black-color" data-promo-number="3" data-show="none">
+                              <div class="flex-container-promo flex-container-text">
+                                    <div class="flex-item-promo">
+                                          <a><h2 class="promo-title">Tutti i ricambi per auto e moto</h2></a>
+                                          <span>Trova le componenti di cui hai bisogno, al giusto prezzo</span>
+                                          <a><div class="flex-item-promo promo-button">Vai ai prodotti</div></a>
+                                          <a class="underlined"><span class="mobile-very-mini-text">Vedi T&C.</span></a>
+                                    </div>
+                              </div>
+                              <div class="flex-item-promo flex-container-img no-padding"></div>
+                        </div>
+                        <button id="go-ahead-promo-button">></button>
+                  </section>
+
+
+                  <section class="mobile-margin">
+                        <h2>I brand più ricercati su eBay</h2>
+                        <div class="flex-container-loghi">
+                              <div class="flex-item-loghi">
+                                    <a>
+                                          <img src="img/logos-section/apple.jpg">
+                                          <h3><span>Apple</span></h3>
+                                    </a>
+                              </div>
+                              <div class="flex-item-loghi">
+                              <a>
+                                    <img src="img/logos-section/dyson.jpg">
+                                    <h3><span>Dyson</span></h3>
+                              </a>
+                              </div>
+                              <div class="flex-item-loghi">
+                              <a>
+                                    <img src="img/logos-section/samsung.jpg">
+                                    <h3><span>Samsung</span></h3>
+                              </a>
+                              </div>
+                              <div class="flex-item-loghi">
+                              <a>
+                                    <img src="img/logos-section/nintendo.jpg">
+                                    <h3><span>Nintendo</span></h3>
+                              </a>
+                              </div>
+                              <div class="flex-item-loghi">
+                              <a>
+                                    <img src="img/logos-section/pokemon.jpg">
+                                    <h3><span>Pokémon</span></h3>
+                              </a>
+                              </div>
+                              <div class="flex-item-loghi">
+                              <a>
+                                    <img src="img/logos-section/playstation.jpg">
+                                    <h3><span>PlayStation</span></h3>
+                              </a>
+                              </div>
+                              <div class="flex-item-loghi mobile-hide-content">
+                              <a>
+                                    <img src="img/logos-section/lego.jpg">
+                                    <h3><span>Lego</span></h3>
+                              </a>
+                              </div>
+                        </div>
+
+                  </section>
+
+                  <section class="mobile-margin">
+                        <div id="flex-container-promo-middle" class="flex-container-promo mini green-color background-light-green-color">
+                              <img id="promo-logo" src="img/icons/promo.jpg">
+                              <div id="promo-text-content" class="flex-item-promo">
+                                    <a>
+                                          <h2 class="mini-promo-title">Su eBay c'è aria di primavera!</h2>
+                                    </a>
+                                    <span>Usa il coupon 10% e preparati alla bella stagione</span>
+                                    <span>&nbsp;|&nbsp;</span>
+                                    <a class="underlined"><span>Vedi T&C.</span></a>
+                              </div>
+                              <a>
+                                    <div class="flex-item-promo promo-button">Vai alla selezione</div>
+                              </a>
+                        </div>
+                  </section>
+
+                  <section class="mobile-margin">
+                        <h2>Il marketplace delle passioni</h2>
+                        <div class="flex-container-loghi">
+                              <div class="flex-item-loghi">
+                                    <a>
+                                          <img src="img/categories-section/elettronica.jpg">
+                                          <h3><span>Elettronica</span></h3>
+                                    </a>
+                              </div>
+                              <div class="flex-item-loghi">
+                                    <a>
+                                          <img src="img/categories-section/elettrodomestici.jpg">
+                                          <h3><span>Elettrodomestici</span></h3>
+                                    </a>
+                              </div>
+                              <div class="flex-item-loghi">
+                                    <a>
+                                          <img src="img/categories-section/casa_e_giardino.jpg">
+                                          <h3><span>Casa e giardino</span></h3>
+                                    </a>
+                              </div>
+                              <div class="flex-item-loghi">
+                                    <a>
+                                          <img src="img/categories-section/motori.jpg">
+                                          <h3><span>Motori</span></h3>
+                                    </a>
+                              </div>
+                              <div class="flex-item-loghi">
+                                    <a>
+                                          <img src="img/categories-section/collezionismo.jpg">
+                                          <h3><span>Collezionismo e passioni</span></h3>
+                                    </a>
+                              </div>
+                              <div class="flex-item-loghi">
+                                    <a>
+                                          <img src="img/categories-section/moda.jpg">
+                                          <h3><span>Moda e bellezza</span></h3>
+                                    </a>
+                              </div>
+                              <div class="flex-item-loghi mobile-hide-content">
+                                    <a>
+                                          <img src="img/categories-section/ricondizionato.jpg">
+                                          <h3><span>Ricondizionato</span></h3>
+                                    </a>
+                              </div>
+                        </div>
+                  </section>
+
+                  <section id="promo-cards-section" class="mobile-margin">
+                        <div id="flex-container-title">
+                              <h2>Offerte di oggi - Tutte con spedizione gratuita</h2>
+                              <h4 class="no-bolded underlined">Mostra tutto</h4>
+                        </div>
+                        <div id="flex-container-cell-main">
+                              <article class="flex-container-cell column">
+                                    <div class="flex-item-cell-img">
+                                          <a href="">
+                                                <img src="img/promo-cells-section/1-ruota.png">
+                                          </a>
+                                    </div>
+                                    <div class="flex-item-cell-title">
+                                          <a href="">
+                                                <h3 class="no-margin no-bolded">Pneumatici Auto Estivi 215/45 ZR17 91Y Michelin Pilot Sport 5 Gomme Dot Recenti</h3>
+                                          </a>
+                                    </div>
+                                    <div class="flex-item-cell-footer">
+                                          <div class="flex-item-cell-price">
+                                                <div>
+                                                      <a href="">
+                                                            <h3 class="no-margin">EUR 129,90</h3>
+                                                      </a>
+                                                </div>
+                                                <div>
+                                                      <a href="">
+                                                            <span class="very-mini-text black-alpha-color">(EUR 129,90/Unità)</span>
+                                                      </a>
+                                                </div>
+                                          </div>
+                                          <div class="flex-item-cell-abs menu">
+                                                <button>
+                                                      <img src="img/icons/menu.png">
+                                                </button>
+                                          </div>
+                                    </div>
+                                    
+                                    <div class="flex-item-cell-abs fav">
+                                          <button>
+                                                <img src="img/icons/cuore-vuoto.png">
+                                          </button>
+                                    </div>
+                              </article>
+      
+                              <article class="flex-container-cell column">
+                                    <div class="flex-item-cell-img">
+                                          <a href="">
+                                                <img src="img/promo-cells-section/2-casco.png">
+                                          </a>
+                                    </div>
+                                    <div class="flex-item-cell-title">
+                                          <a href="">
+                                                <h3 class="no-margin no-bolded">Casco integrale Scorpion EXO- R1 Air Carbonio Nero Lucido</h3>
+                                          </a>
+                                    </div>
+                                    <div class="flex-item-cell-footer">
+                                          <div class="flex-item-cell-price">
+                                                <div>
+                                                      <a href="">
+                                                            <h3 class="no-margin">EUR 349,95</h3>
+                                                      </a>
+                                                </div>
+                                                <div>
+                                                      <a href="">
+                                                            <span class="very-mini-text black-alpha-color">&nbsp;</span>
+                                                      </a>
+                                                </div>
+                                          </div>
+                                          <div class="flex-item-cell-abs menu">
+                                                <button>
+                                                      <img src="img/icons/menu.png">
+                                                </button>
+                                          </div>
+                                    </div>
+                                    
+                                    <div class="flex-item-cell-abs fav">
+                                          <button>
+                                                <img src="img/icons/cuore-vuoto.png">
+                                          </button>
+                                    </div>
+                              </article>
+      
+                              <article class="flex-container-cell column">
+                                    <div class="flex-item-cell-img">
+                                          <a href="">
+                                                <img src="img/promo-cells-section/3-olio.png">
+                                          </a>
+                                    </div>
+                                    <div class="flex-item-cell-title">
+                                          <a href="">
+                                                <h3 class="no-margin no-bolded">6 LT OLIO MOTORE BARDAHL 5W30 C2 C3 TECHNOS XFS LUBRIFICANTE AUTO SINTETICO</h3>
+                                          </a>
+                                    </div>
+                                    <div class="flex-item-cell-footer">
+                                          <div class="flex-item-cell-price">
+                                                <div>
+                                                      <a href="">
+                                                            <h3 class="no-margin">EUR 108,00</h3>
+                                                      </a>
+                                                </div>
+                                                <div>
+                                                      <a href="">
+                                                            <span class="very-mini-text black-alpha-color">(EUR 18,00/L)</span>
+                                                      </a>
+                                                </div>
+                                          </div>
+                                          <div class="flex-item-cell-abs menu">
+                                                <button>
+                                                      <img src="img/icons/menu.png">
+                                                </button>
+                                          </div>
+                                    </div>
+                                    
+                                    <div class="flex-item-cell-abs fav">
+                                          <button>
+                                                <img src="img/icons/cuore-vuoto.png">
+                                          </button>
+                                    </div>
+                              </article>
+      
+                              <article class="flex-container-cell column">
+                                    <div class="flex-item-cell-img">
+                                          <a href="">
+                                                <img src="img/promo-cells-section/4-bauletto.png">
+                                          </a>
+                                    </div>
+                                    <div class="flex-item-cell-title">
+                                          <a href="">
+                                                <h3 class="no-margin no-bolded">Bauletto nero MONOLOCK goffrato con piastra e kit universale B27NMAL GIVI</h3>
+                                          </a>
+                                    </div>
+                                    <div class="flex-item-cell-footer">
+                                          <div class="flex-item-cell-price">
+                                                <div>
+                                                      <a href="">
+                                                            <h3 class="no-margin">EUR 65,00</h3>
+                                                      </a>
+                                                </div>
+                                                <div>
+                                                      <a href="">
+                                                            <span class="very-mini-text black-alpha-color">&nbsp;</span>
+                                                      </a>
+                                                </div>
+                                          </div>
+                                          <div class="flex-item-cell-abs menu">
+                                                <button>
+                                                      <img src="img/icons/menu.png">
+                                                </button>
+                                          </div>
+                                    </div>
+                                    
+                                    <div class="flex-item-cell-abs fav">
+                                          <button>
+                                                <img src="img/icons/cuore-vuoto.png">
+                                          </button>
+                                    </div>
+                              </article>
+                        </div>
+                        
+                  </section>
+
+                  <section class="mobile-margin mobile-hide-content">
+                        <div id="flex-container-sugg">
+                              <div id="sugg-item" class="flex-item-promo sugg">
+                                    <a>
+                                          <div class="very-mini-text black-alpha-color">Suggerimenti</div>
+                                    </a>
+                                    <img id="mini-logo" src="img/site-logos/logo.png">
+                                    <a>
+                                          <h4 class="mini-promo-title">Fino al 50% con spedizione gratuita</h4>
+                                    </a>
+                                    <span class="black-alpha-color">Scopri le migliori offerte</span>
+                                    <a>
+                                          <div class="flex-item-promo promo-button">Acquista ora</div>
+                                    </a>
+                              </div>
+                              <div class="flex-item-promo no-padding sugg">
+                                    <img id="sponsor-img" src="img/sponsor.jpg">
+                              </div>
+                        </div>
+                  </section>
+
+                  <section>
+                        <div class="flex-container-promo" id="container-promo-auto">
+                              <div class="flex-container-promo flex-container-text no-background-color">
+                                    <div class="flex-item-promo">
+                                          <a>
+                                                <h2 class="promo-title">Approfitta del coupon 10% per la tua auto</h2>
+                                          </a>
+                                          <span>Acquista ora gli pneumatici perfetti per auto e moto</span>
+                                          <a>
+                                                <div class="flex-item-promo white-border promo-button">Vai ai prodotti</div>
+                                          </a>
+                                          <a>
+                                                <span class="very-mini-text">Si applicano Termini e Condizioni.</span>
+                                          </a>
+                                    </div>
+                              </div>
+                        </div>
+                  </section>
+
+            </main>
+
+            <footer class="no-margin margined">
+                  <div id="flex-container-footer">
+                        <div>
+                              <a class="bolded">Compra</a>
+                              <a>Come fare acquisti</a>
+                              <a>Acquisti per categoria</a>
+                              <a>eBay Imperdibili</a>
+                              <a>App eBay</a>
+                              <a>I brand in vendita su eBay</a>
+                              <a>Marche auto</a>
+                              <a>Aste di beneficenza</a>
+                              <a>Negozi Hub</a>
+                              <a>eBay Extra</a>
+                        </div>
+                        <div>
+                              <a class="bolded">Vendi su eBay</a>
+                              <a>Spazio venditori</a>
+                              <a>Tariffe venditori</a>
+                              <a>Negozi</a>
+                              <a>Centro spedizioni</a>
+                              <a>Protezione venditori</a>
+                              <a>Vendite internazionali</a>
+                              <a>Novità per i venditori professionali</a>
+                              <a>Strumenti di vendita</a>
+                        </div>
+                        <div>
+                              <a class="bolded">A proposito di eBay</a>
+                              <a>Informazioni – Note legali</a>
+                              <a>Mediazione</a>
+                              <a>Ufficio stampa</a>
+                              <a>Pubblicità su eBay</a>
+                              <a>Affiliazione</a>
+                              <a>Lavora in eBay</a>
+                              <a>VeRO: Proprietà Intellettuale</a>
+                        </div>
+                        <div>
+                              <a class="bolded">Aiuto e contatti</a>
+                              <a>Spazio sicurezza</a>
+                              <a>Garanzia cliente eBay</a>
+                              <br>
+                              <a class="bolded">Community</a>
+                              <a>Facebook</a>
+                              <a>YouTube</a>
+                              <a>Instagram</a>
+                              <a>Domande e risposte tra utenti</a>
+                              <a>Forum</a>
+                              <a>Gruppi</a>
+                              <a>Bacheca Annunci</a>
+                              <br>
+                              <a class="bolded">Siti eBay</a>
+                        </div>
+                  </div>
+                  
+                  <div id="flex-container-footer-mobile">
+                        <table>
+                              <tr>
+                                    <td><a>Aziende del gruppo eBay</a></td>
+                                    <td><a>Bacheca Annunci</a></td>
+                              </tr>
+                              <tr>
+                                    <td><a>Community</a></td>
+                                    <td><a>Spazio Sicurezza</a></td>
+                              </tr>
+                              <tr>
+                                    <td><a>Come vendere</a></td>
+                                    <td><a>Spazio venditori</a></td>
+                              </tr>
+                              <tr>
+                                    <td><a>Regole eBay</a></td>
+                                    <td><a>Traduzione</a></td>
+                              </tr>
+                              <tr>
+                                    <td><a>Pubblicità su eBay</a></td>
+                                    <td><a>Affiliazione</a></td>
+                              </tr>
+                              <tr>
+                                    <td><a>Aiuto e contatti</a></td>
+                                    <td><a>Mappa del Sito</a></td>
+                              </tr>
+                        </table>
+                  </div>
+
+                  <div id="footer-end" class="margined">
+                        Copyright © 1995-2024 eBay Inc. Tutti i diritti riservati. 
+                        <a>Accessibilità</a>, <a>Accordo per gli utenti</a>, <a>Privacy</a>, <a>Condizioni di utilizzo dei servizi di pagamento</a>, <a>Cookie</a> e <a>AdChoice</a>
+                  </div>
+
+            </footer>
+      </body>
+
+</html>
